@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Count Earnings</title>
-    <link rel="stylesheet" href="https://unpkg.com/mobi.css/dist/mobi.min.css" />
+    <link rel="stylesheet" href="./mobi.min.css" />
 </head>
 
 <body>
     <div class="flex-center flex-middle" style="height: 100vh;">
         <div class="container">
-            <h1 id="title" style="display: none;">Earnings</h1>
+            <h1 id="title">Earnings</h1>
             <form id="form" class="form" style="display: none;">
                 <p class="text-center">Please input your salary: </p>
                 <input type="number" id="salaryinput"/>
-                <button id="confirmbutton" type="button" class="btn btn-primary btn-block" onclick="handleConfirm">Confirm</button>
+                <button id="confirmButton" type="button" class="btn btn-primary btn-block">Confirm</button>
             </form>
+            <button id="cancelButton" type="button" class="btn btn-primary btn-block" onclick="clearSalary()">Reset</button>
         </div>
     </div>
     <script src="./tools.js"></script>

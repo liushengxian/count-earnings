@@ -38,3 +38,18 @@ const getEarnedSalary = (salary, num) => {
     return earnedMoney.toFixed(num);
 
 }
+
+const clearSalary = () => {
+    localStorage.setItem('salary', '');
+
+    const form = document.getElementById('form');
+    const title = document.getElementById('title');
+    const cancelButton = document.getElementById('cancelButton');
+    title.style.display = 'none';
+    form.style.display = 'block';
+    cancelButton.style.display = 'none';
+
+    window.location.reload();
+
+
+}
